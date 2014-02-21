@@ -1,0 +1,170 @@
+﻿.btns, .head, .cont {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;	
+}
+
+*, *:focus {
+    outline: none !important;
+	-webkit-tap-highlight-color: 	transparent !important;
+    -webkit-touch-callout: none !important;
+}
+
+body {
+    font-family: Tahoma;
+}
+
+#ct {
+	margin-left: auto;
+	margin-right: auto;
+    width:400px;
+}
+
+#ct .head td
+{
+    background-color: #67A92C;
+    color:White;
+    text-align: center;
+    padding: 10px;
+    font-size: 15pt;
+}
+
+#ct .cont
+{
+    background-color: #91D355;
+}
+
+#ct .stats > td
+{
+    background-color: #B2DD8D;
+    padding: 10px;
+    text-align: center;
+}
+
+#ct .btns td
+{
+    background-color: #D6EBC4;
+    color:White;
+    text-align: center;
+    padding: 3px;
+}
+
+#ct .btnsOpt td {
+    background-color: #D6EBC4;
+    color:White;
+    text-align: center;
+    padding: 3px;
+    text-align: center;
+}
+
+.bt 
+{
+    display: inline-block;
+	margin: 5px 3px;
+	background-color: #7BBE3F;
+	padding: 7px;
+	color: white;
+	border: 1px solid #67AD28;
+	cursor: pointer;
+}
+
+#gt 
+{
+    background-color: White;
+	border: 1px solid #91D355;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.spacer {
+	margin: 10px;
+}
+
+#selectLevel {
+	width: 100%;
+    text-align: center;
+    font-size: 13pt;
+    padding: 2px;
+    text-align: center !important;
+    border: 1px solid #AEDB84;
+    background-color: #91D355;
+    color: #265000;
+    margin-top: 10px;
+}
+
+#gt td 
+{
+	text-align: center;
+	vertical-align: middle;
+	border: 2px solid #91D355;
+	color: #224106;
+	height: 40px;
+	width: 40px;
+	cursor: pointer;
+}
+
+#gt td:hover {
+	background-color: #F9F9F9;
+}
+
+#gt td.selected {
+	background-color: #DDD;
+}
+
+#gt td.closed {
+	background-color: #A6E46E;
+	color: #67A92C;
+	text-decoration: line-through;
+}
+
+#buttomAddRow {
+	margin: 5px 25px;
+	background-color: #7BBE3F;
+	padding: 7px;
+	color: white;
+	border: 1px solid #67AD28;
+	cursor: pointer;
+}
+#buttomAddRow:hover {
+	background-color: #67A92C;
+	color: White;
+}
+
+.stats table {
+	margin-left: auto;
+	margin-right: auto;
+}
+.stats table td
+{
+    padding: 3px;
+    color: #363636;
+}
+
+.stats table td.st2
+{
+    padding-left: 10px;
+}
+
+.stats table tr {
+	border-bottom: 1px solid #8DC757;
+}
+
+.help {
+    font-size:8pt; 
+    text-align:center; 
+    padding:10px; 
+    margin-left:auto; 
+    margin-right:auto;
+    background-color:#EEE;
+    color:#444;
+}
+
+.help span {
+    color:#67A92C;
+}
+
+.help p{
+    line-height:12pt;
+}

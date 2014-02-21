@@ -1,0 +1,94 @@
+﻿<html>
+    <head>
+        <title>Number puzzle</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link href="css/reset.css" rel="stylesheet" type="text/css" />
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <script src="js/libs/jquery.js" type="text/javascript"></script>
+        <script src="js/libs/knockout.js" type="text/javascript"></script>
+        <script src="js/logic.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <table id="ct">
+            <tbody>
+                <tr class="head">
+                    <td>
+                        <div>Number puzzle</div>
+                        <div><select id="selectLevel" data-bind="options: levels, optionsText:  function(item) { return item.name }, value:selectedLevel, event:{ change: OnLevelChanged}"></select></div>
+                    </td>
+                </tr>
+                <tr class="cont">
+                    <td>
+                        <div class="spacer">
+                            <table id="gt">
+                                <tbody data-bind="foreach: rows">
+                                    <tr data-bind="foreach: items, visible:show">
+                                        <td data-bind="text: value, click: onItemClick, css:{'selected':isSelected, 'closed':isClosed}"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="btns">
+                    <td>
+                        <div id="buttomAddRow" data-bind="click:AddNewSet">Add cells in order</div>
+                    </td>
+                </tr>
+                <tr class="stats" data-bind="with:stats">
+                    <td>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td colspan="4">Statistics</td>
+                                </tr>
+                                <tr>
+                                    <td>Addition pairs:</td>
+                                    <td data-bind="text:additionPairs"></td>
+                                    <td class="st2">Time:</td>
+                                    <td data-bind="text:timeLiteral"></td>
+                                </tr>
+                                <tr>
+                                    <td>Equality pairs:</td>
+                                    <td data-bind="text:equalityPairs"></td>
+                                    <td class="st2">Total adds:</td>
+                                    <td data-bind="text:nrOfAdds"></td>
+                                </tr>
+                                <tr>
+                                    <td>Total pairs:</td>
+                                    <td data-bind="text:totalPairs"></td>
+                                    <td class="st2">Total rows:</td>
+                                    <td data-bind="text:nrTotalRows"></td>
+                                </tr>
+                                <tr>
+                                    <td>Rows deleted:</td>
+                                    <td data-bind="text:rowsDeleted"></td>
+                                    <td class="st2">Level:</td>
+                                    <td data-bind="text:level"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="btnsOpt">
+                    <td>
+                        <div class="bt" data-bind="click:Restart">Restart</div>
+                    </td>
+                </tr>
+                <tr class="">
+                    <td>
+                        <div class="help">
+                            <p><span>&bull;</span> Select two identical numbers or two with sum of 10</p>
+                            <p><span>&bull;</span> Two numbers should be on same axes (horizontal or vertical)</p>
+                            <p><span>&bull;</span> Numbers can be apart (numbers between should be used)</p>
+                            <p><span>&bull;</span> Numbers wrap (rows last number can be paired with next rows first number)</p>
+                            <p><span>&bull;</span> If no pairs can be found you can append all unused numbers as new rows</p>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
