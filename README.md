@@ -3,6 +3,8 @@ Number puzzle game
 
 Description
 --------------
+
+Play it at http://www.piip.lv/numberpuzzle/
 This is HTML/Javascript game created using http://knockoutjs.com/
 
 Rules
