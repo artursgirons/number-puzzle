@@ -2,7 +2,7 @@
 
 ### Description
 
-Play it at https://artursgirons.info/numberpuzzle/
+Play it at https://artursgirons.info/number-puzzle/
 
 This is HTML/Javascript game written using http://knockoutjs.com/
 
