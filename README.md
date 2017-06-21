@@ -1,7 +1,5 @@
 ## "Ten or Equal" number puzzle
 
-### Description
-
 Play it at https://artursgirons.info/number-puzzle/
 
 This is HTML/Javascript game written using http://knockoutjs.com/
