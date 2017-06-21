@@ -27,7 +27,7 @@ var GameVM = (function () {
         var levels = [
             {
                 id: 0,
-                name: '0. Laws of "physics"',
+                name: '0. Tutorial',
                 columns: 3,
                 map: [
                     [1, 1, 2],
@@ -48,7 +48,7 @@ var GameVM = (function () {
             },
             {
                 id: 2,
-                name: '2. I\'m original',
+                name: '2. Original puzzle',
                 columns: 9,
                 map: [
                     [1, 2, 3, 4, 5, 6, 7, 8, 9],
@@ -58,7 +58,7 @@ var GameVM = (function () {
             },
             {
                 id: 3,
-                name: '3. It\'s full of stars',
+                name: '3. Stars',
                 columns: 9,
                 map: [
                     [9, 0, 0, 0, 0, 0, 0, 9, 1],
@@ -74,7 +74,7 @@ var GameVM = (function () {
             },
             {
                 id: 100,
-                name: 'Bonus: Totaly random',
+                name: 'Bonus: Random',
                 columns: 9,
                 map: null
             }

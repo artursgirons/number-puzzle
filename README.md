@@ -1,11 +1,11 @@
-Number puzzle game
+"Ten or Equal" number puzzle
 ============
 
 Description
 --------------
 
-Play it at http://www.piip.lv/numberpuzzle/  
-This is HTML/Javascript game created using http://knockoutjs.com/
+Play it at https://artursgirons.info/numberpuzzle/
+This is SAP HTML/Javascript game written using http://knockoutjs.com/
 
 Rules
 --------------
