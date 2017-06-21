@@ -1,14 +1,12 @@
-"Ten or Equal" number puzzle
-============
+## "Ten or Equal" number puzzle
 
-Description
---------------
+### Description
 
 Play it at https://artursgirons.info/numberpuzzle/
-This is SAP HTML/Javascript game written using http://knockoutjs.com/
 
-Rules
---------------
+This is HTML/Javascript game written using http://knockoutjs.com/
+
+### Rules
 
 - Select two identical numbers or two with sum of 10
 - Two numbers should be on same axes (horizontal or vertical)
